@@ -8,7 +8,7 @@ from enums.moves import Moves
 from src.board import Board
 from src.computer import Computer
 
-load_dotenv()
+load_dotenv('.env')
 app = Flask(__name__)
 CORS(app, support_credentials=True)
 
