@@ -3,9 +3,9 @@ import os
 import json
 import copy
 from constants.constants import TALLYS, VALID_COORDINATES_TO_POSITIONS, VALID_POSITIONS
-
-openai.api_key = os.getenv("OPENAI_API_KEY")
 from enums.difficulties import Difficulties
+
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 
 class Computer:
