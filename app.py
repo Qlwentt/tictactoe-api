@@ -1,13 +1,14 @@
 import json
 from flask import Flask, Response, jsonify, request
 from flask_cors import CORS, cross_origin
+from dotenv import load_dotenv
 
 from constants.constants import VALID_POSITIONS
 from enums.moves import Moves
 from src.board import Board
 from src.computer import Computer
 
-
+load_dotenv()
 app = Flask(__name__)
 CORS(app, support_credentials=True)
 
